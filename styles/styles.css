@@ -188,7 +188,13 @@ header nav ul:nth-of-type(1) button:active {
 
 /* picture + text, homepage */
 #home main section:first-of-type {
-  margin-top: 4em;
+  margin-top: 2em;
+}
+
+@media (max-width: 38em) {
+  #home main section:first-of-type ul {
+    margin-top: 4 em;
+  }
 }
 
 @media (max-width: 60em) {
@@ -199,6 +205,22 @@ header nav ul:nth-of-type(1) button:active {
   flex-direction: column;
   flex-wrap: nowrap;
 }
+
+
+}
+
+@media (min-width: 60em) {
+  #home main section:first-of-type {
+    
+
+    margin: 4rem 2rem 4rem 2rem;
+  }
+}
+
+@media (max-width: 60em) {
+  #home main section:first-of-type img {
+    margin: 2rem 0 3rem 0;
+  }
 }
 
 #home main section:first-of-type ul li {
@@ -212,8 +234,7 @@ header nav ul:nth-of-type(1) button:active {
 
   border-radius: 1000px;
 
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  
 }
 
 #home main section:first-of-type ul li:nth-of-type(2) p {
@@ -239,7 +260,7 @@ header nav ul:nth-of-type(1) button:active {
   }
 
   #home main section:first-of-type ul li:first-of-type img {
-    margin: 2rem 1rem 2rem 2rem;
+
     width: 14rem;
   }
 
@@ -247,6 +268,8 @@ header nav ul:nth-of-type(1) button:active {
     font-size: 1.5rem;
 
     text-align: left;
+
+    padding: 0 1rem 0 2rem;
   }
 }
 
@@ -264,7 +287,7 @@ header nav ul:nth-of-type(1) button:active {
   }
 }
 
-/* project overview */
+/* project overview
 
 #home main section:nth-of-type(2) {
   display: grid;
@@ -290,20 +313,19 @@ header nav ul:nth-of-type(1) button:active {
 
 /* block 2 */
 
-#home main section:nth-of-type(2) a:nth-of-type(2) {
-  display: flex;
+/* #home main section:nth-of-type(2) a:nth-of-type(2) {
   justify-content: center;
   
   width: 89%;
-}
+} */
 
 /* block 3 */
 
-#home main section:nth-of-type(2) a:nth-of-type(3) {
-  width: 83.5%;
+/* #home main section:nth-of-type(2) a:nth-of-type(3) {
+  display: flex;
+  justify-content: center;
+  width: 94%;
 }
-
-
 
 #home main section:nth-of-type(2) a {
   margin: 0;
@@ -334,12 +356,12 @@ header nav ul:nth-of-type(1) button:active {
     font-size: 2rem;
   }
 
-}
+} */
 
 /* grid display on smaller screens (making sure only
 one block shows per column */
 
-@media (max-width: 60em) {
+/* @media (max-width: 60em) {
   #home main section:nth-of-type(2) {
     display: grid;
     grid-template-columns: 1fr;
@@ -351,17 +373,19 @@ one block shows per column */
     flex-direction: column;
     justify-content: center;
   }
-}
 
-/* making sure all the blocks are the same height on bigger screens */
+  #home main section:nth-of-type(2) a:nth-of-type(3) {
+    width: 100%;
+  }
 
-@media (min-width: 60em) {
-  
-}
+  #home main section:nth-of-type(2) a:nth-of-type(2) {
+    width: 100%;
+  }
+} */
 
 /* adding states to the different blocks */
 
-#home main section:nth-of-type(2) a ul:hover {
+/* #home main section:nth-of-type(2) a ul:hover {
   transform: scale(1.05);
 }
 
@@ -370,6 +394,136 @@ one block shows per column */
 }
 
 #home main section:nth-of-type(2) a:focus {
+  transition: 0s; 
+  padding: 1rem;
+  border: 2px dashed var(--purple);
+  outline: none;
+} */
+
+/* project overview */
+
+#home main {
+  
+}
+
+#home main section {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 2rem 2rem 2rem 2rem;
+
+  gap: 2rem;
+}
+
+#home main section a ul {
+  transition: 1s;
+}
+
+#home main section a {
+  justify-items: center;
+  margin: 0;
+}
+
+#home main section a ul li:first-of-type img {
+  width: 100%;
+
+  border-radius: 20px;
+}
+
+#home main section a {
+  width: 50%;
+}
+
+#home main section:nth-of-type(2) a:nth-of-type(2) {
+  width: 44%;
+}
+
+#home main section:nth-of-type(2) a:nth-of-type(2) img {
+  width: 100%;
+}
+
+#home main section:nth-of-type(3) a:first-of-type {
+  width: 47%;
+}
+
+#home main section:nth-of-type(3) a:first-of-type img {
+  width: 100%;
+}
+
+
+#home main section a ul li:nth-of-type(2) {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+
+  font-family: 'Dongle', sans-serif;
+}
+
+@media (min-width: 38em) {
+  
+}
+
+@media (max-width: 38em) {
+  #home main {
+    margin-top: 8rem;
+  }
+}
+
+@media (min-width: 60em) {
+  #home main section a ul li:nth-of-type(2) {
+    font-size: 2rem;
+  }
+
+}
+
+/* grid display on smaller screens (making sure only
+one block shows per column */
+
+@media (max-width: 60em) {
+  #home main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #home main section a:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  
+  #home main section:first-of-type a:first-of-type {
+    width: 100%;
+  }
+
+  #home main section:first-of-type a:nth-of-type(2) {
+    width: 100%;
+  }
+
+  #home main section:nth-of-type(2) a:first-of-type {
+      width: 100%;
+    }
+
+    #home main section:nth-of-type(2) a:nth-of-type(2) {
+      width: 100%;
+    }
+
+}
+
+/* adding states to the different blocks */
+
+#home main section a ul:hover {
+  transform: scale(1.05);
+}
+
+#home main section a ul:active {
+  transform: scale(0.95);
+}
+
+#home main section a:focus {
   transition: 0s; 
   padding: 1rem;
   border: 2px dashed var(--purple);
@@ -804,7 +958,7 @@ footer section ul:nth-of-type(3) li p {
   justify-content: center;
   align-items: center;
 
-  margin: 5rem 0 0rem 0;
+  margin: 3rem 0 0rem 0;
 }
 
 #work main section:first-of-type article:nth-of-type(5) ul li:first-of-type h1 {
@@ -1635,4 +1789,346 @@ footer section ul:nth-of-type(3) li p {
   color: var(--purple);
 
   transition: 1s;
+}
+
+/* portfolio page */
+
+/* large replica page */
+
+#portfolio main section:first-of-type ul {
+  padding: 0;
+}
+
+#portfolio main section:first-of-type ul li {
+  color: white;
+  font-family: 'Dongle', sans-serif;
+}
+
+#portfolio main section:first-of-type article:first-of-type {
+  display: flex;
+  margin: 2rem 5rem 2rem 5rem;
+}
+
+#portfolio main section:first-of-type article:first-of-type ul {
+  padding: 0;
+  width: 100%;
+} 
+
+/* image */
+
+#portfolio main section:first-of-type article:first-of-type ul:first-of-type li img {
+  width: 100%;
+  height: auto;
+
+  align-self: left;
+}
+
+/* info */
+
+#portfolio main section:first-of-type article:first-of-type ul:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  width: 50%;
+
+  gap: 1rem;
+}
+
+#portfolio main section:first-of-type article:first-of-type ul:nth-of-type(2) li {
+  text-align: left;
+}
+
+#portfolio main section:first-of-type article:first-of-type ul:nth-of-type(2) li h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#portfolio main section:first-of-type article:first-of-type ul:nth-of-type(2) li p {
+  font-size: 1.5rem;
+  margin: 0;
+
+  text-align: left;
+}
+
+/* intro text */
+
+#portfolio main section:first-of-type article:nth-of-type(2) {
+  background-color: var(--purple);
+}
+
+#portfolio main section:first-of-type article:nth-of-type(2) ul:first-of-type li {
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(2) ul:first-of-type li p {
+  font-size: 1.6rem;
+
+  margin: 2rem 5rem 2rem 5rem;
+  max-width: 50rem;
+
+  text-align: left;
+}
+
+/* text + pictures */
+
+#portfolio main section:first-of-type article:nth-of-type(3) ul {
+  margin: 2rem 0 2rem 0;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(3) ul:first-of-type li {
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(3) ul:first-of-type li p {
+  font-size: 1.5rem;
+  margin: 2rem;
+
+  max-width: 50rem;
+  
+  text-align: left;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(3) ul:nth-of-type(3) li {
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(3) ul:nth-of-type(3) li p {
+  font-size: 1.5rem;
+  margin: 2rem;
+
+  max-width: 50rem;
+  
+  text-align: left;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(3) ul:nth-of-type(5) li {
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(3) ul:nth-of-type(5) li p {
+  font-size: 1.5rem;
+  margin: 2rem;
+
+  max-width: 50rem;
+  
+  text-align: left;
+}
+
+/* last part */
+
+#portfolio main section:first-of-type article:nth-of-type(4) {
+  display: flex;
+  justify-content: center;
+  background-color: var(--purple);
+  margin: 4rem 0 2rem 0;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(4) ul li p {
+  font-size: 1.6rem;
+  margin: 2rem 5rem 2rem 5rem;
+
+  max-width: 50rem;
+  
+  text-align: left;
+}
+
+/* results */
+
+#portfolio main section:first-of-type article:nth-of-type(5) {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: 0rem 0 0rem 0;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(5) ul li:first-of-type h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* website link */
+
+#portfolio main section:first-of-type article:nth-of-type(6) ul li:nth-of-type(3) a {
+  transition: 1s;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(6) ul:nth-of-type(3) li a {
+  transition: 1s;
+  
+}
+
+#portfolio main section:first-of-type article:nth-of-type(6) ul li:nth-of-type(3) a p {
+  font-size: 2.5rem;
+  text-align: center;
+
+  margin: 2rem 2rem 0 2rem;
+  
+  color: var(--purple);
+
+  transition: 1s;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(6) ul:nth-of-type(3) li a {
+  font-size: 2.5rem;
+  text-align: center;
+
+  color: var(--purple);
+
+  transition: 1s;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(6) ul li:nth-of-type(3) a:hover {
+  text-decoration: underline;
+}
+
+#portfolio main section:first-of-type article:nth-of-type(6) ul:nth-of-type(3) li a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/* work page */
+
+/* project overview */
+
+#mywork main {
+  margin-top: 4rem;
+}
+
+#mywork main section {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 2rem 2rem 2rem 2rem;
+
+  gap: 2rem;
+}
+
+#mywork main section a ul {
+  transition: 1s;
+}
+
+#mywork main section a {
+  justify-items: center;
+  margin: 0;
+}
+
+#mywork main section a ul li:first-of-type img {
+  width: 100%;
+
+  border-radius: 20px;
+}
+
+#mywork main section a {
+  width: 50%;
+}
+
+#mywork main section:first-of-type a:nth-of-type(2) {
+  width: 44%;
+}
+
+#mywork main section:first-of-type a:nth-of-type(2) img {
+  width: 100%;
+}
+
+#mywork main section:nth-of-type(2) a:first-of-type {
+  width: 47%;
+}
+
+#mywork main section:nth-of-type(2) a:first-of-type img {
+  width: 100%;
+}
+
+
+#mywork main section a ul li:nth-of-type(2) {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+
+  font-family: 'Dongle', sans-serif;
+}
+
+@media (min-width: 38em) {
+  #mywork main section a ul li:nth-of-type(2) {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 38em) {
+  #mywork main {
+    margin-top: 8rem;
+  }
+}
+
+@media (min-width: 60em) {
+  #mywork main section a ul li:nth-of-type(2) {
+    font-size: 2rem;
+  }
+
+}
+
+/* grid display on smaller screens (making sure only
+one block shows per column */
+
+@media (max-width: 60em) {
+  #mywork main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #mywork main section a:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  
+  #mywork main section:first-of-type a:first-of-type {
+    width: 100%;
+  }
+
+  #mywork main section:first-of-type a:nth-of-type(2) {
+    width: 100%;
+  }
+
+  #mywork main section:nth-of-type(2) a:first-of-type {
+      width: 100%;
+    }
+
+    #mywork main section:nth-of-type(2) a:nth-of-type(2) {
+      width: 100%;
+    }
+
+}
+
+/* adding states to the different blocks */
+
+#mywork main section a ul:hover {
+  transform: scale(1.05);
+}
+
+#mywork main section a ul:active {
+  transform: scale(0.95);
+}
+
+#mywork main section a:focus {
+  transition: 0s; 
+  padding: 1rem;
+  border: 2px dashed var(--purple);
+  outline: none;
 }
