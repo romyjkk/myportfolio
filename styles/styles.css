@@ -45,8 +45,12 @@ header nav ul:nth-of-type(2) li {
   margin-bottom: 1rem;
 }
 
-header nav ul:nth-of-type(2) a:hover {
-    text-decoration: underline var(--white);
+header nav ul:nth-of-type(2) a p {
+
+}
+
+header nav ul:nth-of-type(2) a p:hover {
+    border-bottom: 1px solid var(--white);
 }
 
 header nav ul li p {
@@ -219,7 +223,7 @@ header nav ul:nth-of-type(1) button:active {
 
 @media (max-width: 60em) {
   #home main section:first-of-type img {
-    margin: 2rem 0 3rem 0;
+    margin: 1rem 0 3rem 0;
   }
 }
 
@@ -242,7 +246,7 @@ header nav ul:nth-of-type(1) button:active {
   font-family: 'Dongle', sans-serif;
   text-align: center;
   font-size: 1.3rem;
-  padding: 0 3rem 0 3rem;
+  padding: 0 1rem 0 1rem;
 
   flex-grow: 2;
 
@@ -635,7 +639,7 @@ footer section ul:nth-of-type(3) li p {
 #work main section:first-of-type article:nth-of-type(2) ul:first-of-type li p {
   font-size: 1.6rem;
 
-  margin: 2rem 5rem 2rem 5rem;
+  margin: 2rem 2rem 2rem 2rem;
   max-width: 50rem;
 
   text-align: left;
@@ -837,7 +841,7 @@ footer section ul:nth-of-type(3) li p {
 
 #work main section:first-of-type article:nth-of-type(4) ul li p {
   font-size: 1.6rem;
-  margin: 2rem 5rem 2rem 5rem;
+  margin: 2rem 2rem 2rem 2rem;
 
   max-width: 50rem;
   
@@ -1326,6 +1330,7 @@ footer section ul:nth-of-type(3) li p {
     text-align: center;
     width: 100%;
   }
+
 }
 
 /* intro text */
@@ -1342,7 +1347,7 @@ footer section ul:nth-of-type(3) li p {
 #large main section:first-of-type article:nth-of-type(2) ul:first-of-type li p {
   font-size: 1.6rem;
 
-  margin: 2rem 5rem 2rem 5rem;
+  margin: 2rem 2rem 2rem 2rem;
   max-width: 50rem;
 
   text-align: left;
@@ -1479,6 +1484,12 @@ footer section ul:nth-of-type(3) li p {
   width: 100%;
 }
 
+@media (max-width: 38em) {
+  #large main section:first-of-type article:first-of-type ul {
+    margin-top: 2rem;
+  }
+}
+
 @media (max-width: 43em) {
   #large main section:first-of-type article:nth-of-type(3) ul:nth-of-type(4) {
     display: flex;
@@ -1541,7 +1552,7 @@ footer section ul:nth-of-type(3) li p {
 
 #large main section:first-of-type article:nth-of-type(4) ul li p {
   font-size: 1.6rem;
-  margin: 2rem 5rem 2rem 5rem;
+  margin: 2rem 2rem 2rem 2rem;
 
   max-width: 50rem;
   
@@ -1861,7 +1872,7 @@ footer section ul:nth-of-type(3) li p {
 #portfolio main section:first-of-type article:nth-of-type(2) ul:first-of-type li p {
   font-size: 1.6rem;
 
-  margin: 2rem 5rem 2rem 5rem;
+  margin: 2rem 2rem 2rem 2rem;
   max-width: 50rem;
 
   text-align: left;
@@ -1924,7 +1935,7 @@ footer section ul:nth-of-type(3) li p {
 
 #portfolio main section:first-of-type article:nth-of-type(4) ul li p {
   font-size: 1.5rem;
-  margin: 2rem 5rem 2rem 5rem;
+  margin: 2rem 2rem 2rem 2rem;
 
   max-width: 50rem;
   
@@ -2033,7 +2044,11 @@ footer section ul:nth-of-type(3) li p {
 }
 
 
-
+@media (max-width: 38em) {
+  #portfolio main section:first-of-type article:first-of-type ul {
+    margin-top: 2rem;
+  }
+}
 
 
 @media (max-width: 43em) {
@@ -2090,30 +2105,30 @@ footer section ul:nth-of-type(3) li p {
 
 @media (min-width: 100em) {
 
-  #work main section:first-of-type article:first-of-type ul:nth-of-type(2) li h1 {
+  #portfolio main section:first-of-type article:first-of-type ul:nth-of-type(2) li h1 {
     font-size: 3rem;
   }
 
-  #work main section:first-of-type article:first-of-type ul:nth-of-type(2) li p {
+  #portfolio main section:first-of-type article:first-of-type ul:nth-of-type(2) li p {
     font-size: 2rem;
   }
 
-  #work main section:first-of-type article:nth-of-type(2) ul:first-of-type li p {
+  #portfolio main section:first-of-type article:nth-of-type(2) ul:first-of-type li p {
     font-size: 1.8rem;
     max-width: 60rem;
   }
 
-  #work main section:first-of-type article:nth-of-type(3) ul:nth-of-type(3) li p {
+  #portfolio main section:first-of-type article:nth-of-type(3) ul:nth-of-type(3) li p {
     font-size: 1.7rem;
     max-width: 60rem;
   }
 
-  #work main section:first-of-type article:nth-of-type(3) ul:first-of-type li p {
+  #portfolio main section:first-of-type article:nth-of-type(3) ul:first-of-type li p {
     font-size: 1.7rem;
     max-width: 60rem;
   }
 
-  #work main section:first-of-type article:nth-of-type(4) ul li p {
+  #portfolio main section:first-of-type article:nth-of-type(4) ul li p {
     font-size: 1.8rem;
     max-width: 60rem; 
   }
@@ -2263,6 +2278,18 @@ one block shows per column */
   margin-top: 5rem;
 }
 
+#about main section ul li:nth-of-type(2) h1 {
+  color: white;
+  font-family: 'Dongle', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 3rem 0 3rem;
+
+  flex-grow: 2;
+
+  max-width: 50rem;
+}
+
 #about main section:first-of-type ul {
   display: flex;
   justify-content: center;
@@ -2291,7 +2318,9 @@ one block shows per column */
   display: flex;
   justify-content: center;
 
-  margin: 2rem 0 2rem 0;
+  background-color: var(--purple);
+  margin: 3rem 0 2rem 0;
+  padding: 3em 0 3em 0;
 }
 
 #about main section:first-of-type ul li:nth-of-type(2) p {
@@ -2316,7 +2345,7 @@ one block shows per column */
 #about main section:first-of-type ul li:nth-of-type(3) p {
   color: white;
   font-family: 'Dongle', sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 1.5rem;
   padding: 0 3rem 0 3rem;
 
@@ -2335,8 +2364,65 @@ one block shows per column */
 #about main section:first-of-type ul li:nth-of-type(4) p {
   color: white;
   font-family: 'Dongle', sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 1.5rem;
+  padding: 0 3rem 0 3rem;
+
+  flex-grow: 2;
+
+  max-width: 50rem;
+}
+
+#about main section:first-of-type ul li:nth-of-type(5) {
+  display: flex;
+  justify-content: center;
+
+  margin: 2rem 0 2rem 0;
+}
+
+#about main section:first-of-type ul li:nth-of-type(5) p {
+  color: white;
+  font-family: 'Dongle', sans-serif;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 0 3rem 0 3rem;
+
+  flex-grow: 2;
+
+  max-width: 50rem;
+}
+
+#about main section:first-of-type ul li:nth-of-type(6) {
+  display: flex;
+  justify-content: center;
+
+  margin: 3rem 0 0 0;
+}
+
+#about main section:first-of-type ul li:nth-of-type(6) p {
+  color: var(--white);
+  font-family: 'Dongle', sans-serif;
+  text-align: left;
+  font-size: 1.7rem;
+  padding: 0 3rem 0 3rem;
+
+  flex-grow: 2;
+
+  max-width: 50rem;
+}
+
+#about main section:first-of-type ul li:nth-of-type(7) {
+  display: flex;
+  justify-content: center;
+
+  margin: 1rem 0 2rem 0;
+}
+
+#about main section:first-of-type ul li:nth-of-type(7) p {
+  color: var(--purple);
+  font-family: 'Dongle', sans-serif;
+  text-align: left;
+  font-size: 1.7rem;
   padding: 0 3rem 0 3rem;
 
   flex-grow: 2;
@@ -2346,6 +2432,27 @@ one block shows per column */
 
 @media (max-width: 38em) {
   #about main {
-    margin-top: 8rem;
+    margin-top: 9rem;
+  }
+}
+
+/* bigger screens */
+
+@media (min-width: 100em) {
+  #about main section:first-of-type ul li h1 {
+    font-size: 3rem;
+  }
+
+  #about main section:first-of-type ul:first-of-type li p {
+    font-size: 1.7rem;
+    max-width: 60rem;
+  }
+
+  #about main section:first-of-type ul li:nth-of-type(6) p {
+    font-size: 2rem;
+  }
+
+  #about main section:first-of-type ul li:nth-of-type(7) p {
+    font-size: 2rem;
   }
 }
