@@ -422,13 +422,6 @@ one block shows per column */
   transform: scale(0.95);
 }
 
-#home main section a:focus {
-  transition: 0s; 
-  padding: 1rem;
-  border: 2px dashed var(--purple);
-  outline: none;
-}
-
 /* contact */
 
 footer section {
